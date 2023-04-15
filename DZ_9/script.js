@@ -26,10 +26,10 @@ messageBtn.addEventListener("click", () => {
 const form = document.querySelector("form");
 const input1 = document.querySelectorAll(".form-control");
 form.addEventListener("submit", (event) => {
-  input1.forEach((input) => {
-    if (input.value === "") {
-      input.classList.add("error");
-      input.style.border = "2px solid red";
+  input1.forEach((element) => {
+    if (element.value === "") {
+      element.classList.add("error");
+      element.style.border = "2px solid red";
       event.preventDefault();
     }
   });
